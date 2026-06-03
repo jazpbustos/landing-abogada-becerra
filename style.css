@@ -1453,6 +1453,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .instagram__embed-grid{
-    width: min(80%, 1200px);
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.juicer-feed{
+    width: 100%;
 }
