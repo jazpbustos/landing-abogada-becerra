@@ -876,11 +876,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   margin-top: 46px;
 }
 
-/* Fuerza ancho completo del widget */
-.juicer-feed{
-  width: 100% !important;
-  max-width: 100% !important;
-}
+
 /* ============================================================
    FOOTER
    ============================================================ */
