@@ -859,23 +859,42 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 /* ============================================================
    INSTAGRAM
-============================================================ */
-
+   ============================================================ */
 .instagram {
   padding: 120px 0 110px;
   background: var(--color-warm-white);
-}
-
-.instagram__feed{
-  width: 100%;
-  margin-top: 40px;
 }
 
 .instagram__cta {
   text-align: center;
   margin-top: 46px;
 }
+.instagram__embed-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  align-items: start;
+  margin-bottom: 40px;
+}
 
+.instagram__embed-grid .instagram-media {
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 1024px) {
+  .instagram__embed-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .instagram__embed-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ============================================================
    FOOTER
@@ -1432,3 +1451,4 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   color: var(--color-beige);
   border-color: var(--color-beige);
 }
+
