@@ -391,6 +391,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
  
 .hero__areas {
   font-size: 0.82rem;
+  font-weight: 400;
   color: var(--color-text-sec);
   margin-bottom: 40px;
   letter-spacing: 0.02em;
@@ -771,16 +772,19 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .contact__map-label {
-  font-size: 0.98rem;
-  color: var(--color-text-sec);
-  margin-bottom: 12px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
   line-height: 1.4;
 }
 
-.contact__map-label strong {
-  color: var(--color-primary);
-  font-size: 1.08rem;
-  font-weight: 700;
+.contact__map-address {
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: var(--color-text-sec);
+  margin-bottom: 12px;
+  line-height: 1.4;
 }
 
 .map-frame {
