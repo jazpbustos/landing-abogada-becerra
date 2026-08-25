@@ -106,3 +106,22 @@ if (servicesTrack && servicesPrev && servicesNext) {
 if (window.lucide) {
   lucide.createIcons();
 }
+
+/* ----------------------------------------------------------------
+   Ocultar branding de SociableKit (feed de Instagram)
+   ---------------------------------------------------------------- */
+function hideSociableKitBranding() {
+  document.querySelectorAll('.tutorial_link.--custom-branding').forEach(el => {
+    el.style.setProperty('display', 'none', 'important');
+  });
+}
+ 
+hideSociableKitBranding();
+ 
+const brandingObserver = new MutationObserver(hideSociableKitBranding);
+brandingObserver.observe(document.body, {
+  childList: true,
+  subtree: true,
+  attributes: true,
+  attributeFilter: ['style']
+});

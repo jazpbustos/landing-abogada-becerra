@@ -391,7 +391,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
  
 .hero__areas {
   font-size: 0.82rem;
-  font-weight: 400;
   color: var(--color-text-sec);
   margin-bottom: 40px;
   letter-spacing: 0.02em;
@@ -772,19 +771,16 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .contact__map-label {
-  font-size: 1.08rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  margin-bottom: 4px;
-  line-height: 1.4;
-}
-
-.contact__map-address {
   font-size: 0.98rem;
-  font-weight: 400;
   color: var(--color-text-sec);
   margin-bottom: 12px;
   line-height: 1.4;
+}
+
+.contact__map-label strong {
+  color: var(--color-primary);
+  font-size: 1.08rem;
+  font-weight: 700;
 }
 
 .map-frame {
@@ -865,13 +861,19 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    INSTAGRAM
    ============================================================ */
 .instagram {
-  padding: 120px 0 110px;
+  padding: 70px 0 64px;
   background: var(--color-warm-white);
+}
+
+.instagram .sk-instagram-feed,
+.instagram .sk-ww-instagram-feed {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .instagram__cta {
   text-align: center;
-  margin-top: 46px;
+  margin-top: 8px;
 }
 .instagram__embed-grid {
   display: grid;
@@ -1198,9 +1200,31 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
   /* Differentials */
   .differentials { padding: 60px 0; }
- 
+
   .differentials__grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    grid-template-columns: unset;
+    gap: 14px;
+    background: transparent;
+    border-radius: 0;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin: 0 -20px;
+    padding: 4px 20px 8px;
+  }
+
+  .differentials__grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .diff-item {
+    flex: 0 0 78%;
+    scroll-snap-align: center;
+    border-radius: var(--radius-md);
+    padding: 34px 26px;
   }
  
   /* Contact */
