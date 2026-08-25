@@ -865,8 +865,13 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   background: var(--color-warm-white);
 }
 
+.instagram .section-header {
+  margin-bottom: 24px;
+}
+
 .instagram .sk-instagram-feed,
 .instagram .sk-ww-instagram-feed {
+  margin-top: -12px !important;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
